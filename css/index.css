@@ -1,0 +1,259 @@
+/* common */
+/* small screen */
+body{
+  margin:0;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+  background: #ddd4e4 ;
+  color: rgb(58, 58, 58);
+  padding-top: 24px;
+  font-size: 20px;
+  font-family: Monotype Corsiva, fantasy;
+  text-align: center;
+}
+
+header h1,
+header h2,
+header p{
+  margin: 0;
+}
+header p{
+  font-size: 12px;
+  margin: 10px 0 0px;
+  padding-bottom: 10px 0 20px;
+}
+
+header img{
+  width: 120px;
+  vertical-align: bottom;
+  opacity: 0.4;
+}
+
+
+
+/* ナビゲーションタブ */
+nav{
+  background: #cecece;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 5px 0 2px;
+}
+
+nav ul{
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav li{
+  display: inline;
+  font-size: 16px;
+  margin: 10px 10px 10px 10px;
+  list-style: none;
+}
+
+
+nav.btn{
+  text-decoration: underline;
+  text-align: center;
+  color: #333;
+  display: block;
+  width: 140px;
+  line-height: 32px;
+  margin: 5px 5px 5px 5px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+/* メインテキスト */
+.mainText{
+  margin: 20px 20px;
+}
+
+.mainText h1{
+  font-family: Monotype Corsiva, fantasy;
+  font-size: 28px;
+  text-decoration: underline;
+  text-align: center;
+
+}
+
+.container{
+  margin: 0 auto;
+  padding: auto;
+}
+
+.mainText .text{
+  margin-bottom: 40px;
+}
+.mainText #contact{
+  margin-top: 40px;
+}
+
+
+
+ /* タブメニュー */
+ .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 ;
+  display: flex;
+}
+
+.menu li a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  border-top: 1px dotted;
+  border-left: 1px dotted;
+  border-right: 1px dotted;
+  border-color: #888;
+  border-radius: 4px 4px 0 0;
+}
+
+.menu li a.active {
+  font-weight: bold;
+  background: #8b6dad;
+  color: #fff;
+}
+
+.menu li a:not(.active):hover {
+  opacity: 0.3;
+  transition: opacity 0.4s;
+}
+
+.content.active {
+  background: rgb(95, 65, 102);
+  border: 4px double;
+  border-color: #ffffff;
+  color: #fff;
+  min-height: 150px;
+  padding: 12px;
+  display: block;
+  border-radius: 0px 25px 0px 25px;
+}
+
+.content {
+  display: none;
+}
+
+.content h3{
+  text-align: center;
+}
+
+.content a{
+  color:#fff;
+}
+
+.content table{
+  margin: 0px 10px; 
+}
+
+/* 広告 */
+aside{
+  display: none;
+  text-align: center;
+  margin: 30px auto 30px 15px;
+  }
+
+/* フッター */
+footer{
+  padding:48px;
+  background: #323135;
+  color: #98969c;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+color: #fff;
+background-color: rgba(0,0,0,0.3);
+text-decoration: none;
+display: none;
+position: fixed;
+bottom: 1rem;
+right: 1rem;
+font-size: 1.5rem;
+width: 3.3rem;
+height: 3.3rem;
+line-height: 3.3rem;
+border-radius: 3.3rem;
+text-align: center;
+cursor: pointer;
+}
+
+.pagetop:hover {
+color: #fff !important;
+background-color: #844ca8;
+text-decoration: none;
+}
+
+
+
+/* large screen */
+
+@media (min-width: 500px){
+
+   
+  header .container{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  header .info{
+    width: 60%;
+    align-self: center;
+  }
+
+  header .pic{
+    width: 100px;
+    margin: 0 auto 0 10px; 
+  }
+
+  nav ul .contact{
+    margin-right: 30px;
+  }
+  nav ul{
+    text-align: right;
+    margin: 2px 10px 5px 0;
+  }
+
+  .mainText{
+    font-size: 14px;
+    display: flex;
+  }
+
+  .menu li a {
+    width: 100px;
+  }
+
+
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    margin: 30px auto;
+    width: 500px;
+  }
+  
+  aside{
+    display: block;
+    background: gainsboro;
+    border: 1px solid;
+    border-color: rgb(58, 58, 58);
+    width: 160px;
+  }
+
+}

@@ -10,6 +10,7 @@ header{
   background: #ddd4e4 ;
   color: rgb(58, 58, 58);
   padding-top: 24px;
+  padding-bottom: 0;
   font-size: 20px;
   font-family: Monotype Corsiva, fantasy;
   text-align: center;
@@ -23,7 +24,7 @@ header p{
 header p{
   font-size: 12px;
   margin: 10px 0 0px;
-  padding-bottom: 10px 0 20px;
+  padding-bottom:20px;
 }
 
 header img{
@@ -72,8 +73,6 @@ nav.btn{
 /* メインテキスト */
 .mainText{
   margin: 20px 20px;
-  font-size: 36px;
-  line-height: 32px;
 }
 
 .mainText h1{
@@ -81,7 +80,6 @@ nav.btn{
   font-size: 28px;
   text-decoration: underline;
   text-align: center;
-
 }
 
 .container{
@@ -92,11 +90,61 @@ nav.btn{
 .mainText .text{
   margin-bottom: 40px;
 }
-.mainText #contact{
-  margin-top: 40px;
+
+.mainText h2{
+  font-family: Monotype Corsiva, fantasy;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.mainText p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0px; 
+  line-height: 40px;
+}
+
+.btn{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fff;
+  border: 2px solid;
+  border-color: #323135;
+  text-decoration: none;
+  background: #844ca8;
+  padding: 4px 10px;
+  border-radius: 4px 4px 4px 4px;
+
+}
+
+.btn:hover{
+  opacity: 0.6;
 }
 
 
+/* 年表 */
+.selfHistory{
+  text-align: left;
+}
+
+.selfHistory table{
+  border-spacing:15px 3px;
+}
+.selfHistory thead{
+  font-family: Monotype Corsiva, fantasy;
+  font-size: 20px;
+  text-align: center;
+}
+
+.selfHistory td{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  /* background: #844ca8;
+  border: 1px solid;
+  border-color: #323135; */
+}
 
  /* タブメニュー */
  .menu {
@@ -155,8 +203,24 @@ nav.btn{
   color:#fff;
 }
 
+.content li{
+  line-height: 20px;
+}
+
+.content .def{
+  list-style: none;
+}
 .content table{
   margin: 0px 10px; 
+}
+
+.content #studyTable{
+  margin: 0 0px;
+  border-spacing: 5px 5px;
+}
+.content #studyTable .data1{
+  font-size: 12px;
+  width: 80px;
 }
 
 /* 広告 */
@@ -201,6 +265,17 @@ text-decoration: none;
 }
 
 
+/* medium screen */
+
+
+
+
+
+.btn:hover{
+  opacity: 0.3;
+}
+
+
 
 /* large screen */
 
@@ -218,11 +293,7 @@ text-decoration: none;
     align-self: center;
   }
 
-  header .pic{
-    width: 100px;
-    margin: 0 auto 0 10px; 
-  }
-
+  
   nav ul .contact{
     margin-right: 30px;
   }
@@ -240,6 +311,38 @@ text-decoration: none;
     width: 100px;
   }
 
+  .features .container{
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .features section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .features .pic{
+    width: 50%;
+  }
+
+  .features .info{
+    width: calc(50% - 32px);
+  }
+
+  .members ul {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .members li {
+    width: 250px;
+  }
 
   body {
     font-size: 14px;

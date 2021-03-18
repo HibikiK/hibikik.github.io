@@ -10,6 +10,7 @@ header{
   background: #ddd4e4 ;
   color: rgb(58, 58, 58);
   padding-top: 24px;
+  padding-bottom: 0;
   font-size: 20px;
   font-family: Monotype Corsiva, fantasy;
   text-align: center;
@@ -23,7 +24,7 @@ header p{
 header p{
   font-size: 12px;
   margin: 10px 0 0px;
-  padding-bottom: 10px 0 20px;
+  padding-bottom:20px;
 }
 
 header img{
@@ -72,8 +73,6 @@ nav.btn{
 /* メインテキスト */
 .mainText{
   margin: 20px 20px;
-  font-size: 36px;
-  line-height: 32px;
 }
 
 .mainText h1{
@@ -81,7 +80,6 @@ nav.btn{
   font-size: 28px;
   text-decoration: underline;
   text-align: center;
-
 }
 
 .container{
@@ -92,78 +90,77 @@ nav.btn{
 .mainText .text{
   margin-bottom: 40px;
 }
-.mainText #contact{
-  margin-top: 40px;
-}
 
-
-
- /* タブメニュー */
- .menu {
-  list-style: none;
-  padding: 0;
-  margin: 0 ;
-  display: flex;
-}
-
-.menu li a {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: inline-block;
-  width: 70px;
-  text-align: center;
-  padding: 8px 0;
-  color: #333;
+.mainText h2{
+  font-family: Monotype Corsiva, fantasy;
+  font-size: 24px;
   text-decoration: none;
-  border-top: 1px dotted;
-  border-left: 1px dotted;
-  border-right: 1px dotted;
-  border-color: #888;
-  border-radius: 4px 4px 0 0;
+  text-align: center;
+  margin: 40px auto;
 }
 
-.menu li a.active {
-  font-weight: bold;
-  background: #8b6dad;
-  color: #fff;
-}
-
-.menu li a:not(.active):hover {
-  opacity: 0.3;
-  transition: opacity 0.4s;
-}
-
-.content.active {
-  background: rgb(95, 65, 102);
-  border: 4px double;
-  border-color: #ffffff;
-  color: #fff;
-  min-height: 150px;
-  padding: 12px;
-  display: block;
-  border-radius: 0px 25px 0px 25px;
-}
-
-.content {
-  display: none;
-}
-
-.content h3{
+.mainText h3{
+  color: red;
+  font-size: 24px;
+  text-decoration: none;
   text-align: center;
 }
 
-.content a{
-  color:#fff;
+
+
+/* Works紹介 */
+.features .container{
+  width: 800px;
 }
 
-.content table{
-  margin: 0px 10px; 
+.features section{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.features section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.features .pic{
+  width: 50%;
+}
+
+.features .info{
+  width: calc(50% - 12px);
+}
+
+.features img {
+  width: 300px;
+}
+
+.features > h1 {
+  text-align: center;
+  padding: 64px 0;
+  font-weight: normal;
+}
+
+.features .subcontainer {
+  margin: 0 0px;
+}
+
+.features p {
+  line-height: 1.8;
+}
+
+.features section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 2px dotted;
+  border-color: #888;
 }
 
 /* 広告 */
 aside{
   display: none;
   text-align: center;
-  margin: 30px auto 30px 15px;
+  margin: 30px 15px 30px 15px;
   }
 
 /* フッター */
@@ -201,6 +198,17 @@ text-decoration: none;
 }
 
 
+/* medium screen */
+
+
+
+
+
+.btn:hover{
+  opacity: 0.3;
+}
+
+
 
 /* large screen */
 
@@ -218,11 +226,7 @@ text-decoration: none;
     align-self: center;
   }
 
-  header .pic{
-    width: 100px;
-    margin: 0 auto 0 10px; 
-  }
-
+  
   nav ul .contact{
     margin-right: 30px;
   }
@@ -240,6 +244,38 @@ text-decoration: none;
     width: 100px;
   }
 
+  .features .container{
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .features section{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .features .pic{
+    width: 50%;
+  }
+
+  .features .info{
+    width: calc(50% - 32px);
+  }
+
+  .members ul {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .members li {
+    width: 250px;
+  }
 
   body {
     font-size: 14px;
@@ -247,7 +283,7 @@ text-decoration: none;
   
   .container {
     margin: 30px auto;
-    width: 500px;
+    width: 600px;
   }
   
   aside{

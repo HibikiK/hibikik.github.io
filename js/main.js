@@ -58,5 +58,5 @@ function mail_to(k_1, k_2) {
 const adress = document.getElementById('mail');
 adress.addEventListener('click', e => {
   e.preventDefault();
-  mail_to("hkawasumi@gmail.com", "")
+  mail_to("hkawasumi@gmail.com", "hkawasumi@gmail.com")
 });
